@@ -4,26 +4,26 @@ class Prueba {
 
 	public static void main(String[] args) {
 		
-		Persona pepe = new Persona();
+		Persona alum1 = new Persona();
 
-		pepe.edad = 20;
-		pepe.nombre = "pepe";
+		alum1.edad = 20;
+		alum1.nombre = "pepe";
 		System.out.println(pepe.nombre + " Edad:" +   pepe.edad);
 		
-		pepe.saludar();
-		pepe.despedirse();
+		alum1.saludar();
+		alum1.despedirse();
 		
-		Persona ana = new Persona();
-		ana.edad = 18;
-		ana.nombre = "Ana";
+		Persona alum2 = new Persona();
+		alum2.edad = 18;
+		alum2.nombre = "Ana";
 		
-		Persona aux = pepe;
+		Persona aux = alum1;
 		
 		aux.saludar();
 		
-		ana = aux;
+		alum2 = aux;
 		
-		ana.saludar();
+		alum2.saludar();
 	}
 
 }
